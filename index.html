@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c1532" />
+    <title>&#x65F6;&#x5149;&#x65E5;&#x7B7E;</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+    <main class="dashboard">
+      <header class="hero panel">
+        <div class="brand"><span class="brand-mark">&#x25C8;</span><span>&#x65F6;&#x5149;&#x65E5;&#x7B7E;</span></div>
+        <div class="hero-copy"><p id="greeting" class="overline"></p><h1 id="clock">--:--</h1><p id="fullDate" class="date-line"></p></div>
+        <button id="themeButton" class="icon-button" aria-label="&#x5207;&#x6362;&#x989C;&#x8272;&#x6A21;&#x5F0F;">&#x263E;</button>
+      </header>
+
+      <section class="grid">
+        <article class="calendar panel">
+          <div class="section-head"><div><p class="overline">CALENDAR</p><h2 id="monthLabel"></h2></div><div class="month-controls"><button id="previousMonth" class="round-button" aria-label="&#x4E0A;&#x4E2A;&#x6708;">&#x2039;</button><button id="nextMonth" class="round-button" aria-label="&#x4E0B;&#x4E2A;&#x6708;">&#x203A;</button></div></div>
+          <div class="weekdays"><span>&#x65E5;</span><span>&#x4E00;</span><span>&#x4E8C;</span><span>&#x4E09;</span><span>&#x56DB;</span><span>&#x4E94;</span><span>&#x516D;</span></div>
+          <div id="calendarDays" class="days"></div>
+          <div class="calendar-footer"><span class="dot"></span><span>&#x4ECA;&#x65E5;</span><button id="todayButton" class="text-button">&#x56DE;&#x5230;&#x4ECA;&#x5929;</button></div>
+        </article>
+
+        <article class="weather panel">
+          <div class="section-head"><div><p class="overline">WEATHER</p><h2 id="weatherCity">&#x4E0A;&#x6D77;</h2></div><span id="weatherIcon" class="weather-icon">&#x2600;</span></div>
+          <div class="weather-main"><strong id="temperature">24&#xB0;</strong><div><p id="weatherText">&#x6674;&#x6717;</p><span id="weatherMeta">&#x4F53;&#x611F; 24&#xB0; &middot; &#x6E7F;&#x5EA6; 58%</span></div></div>
+          <div class="weather-stats"><div><span>&#x98CE;&#x901F;</span><b id="wind">12 km/h</b></div><div><span>&#x7D2B;&#x5916;&#x7EBF;</span><b id="uv">&#x4E2D;&#x7B49;</b></div><div><span>&#x66F4;&#x65B0;</span><b id="weatherUpdated">--:--</b></div></div>
+          <button id="weatherButton" class="location-button">&#x25CE; &#x4F7F;&#x7528;&#x6211;&#x7684;&#x4F4D;&#x7F6E;</button>
+        </article>
+
+        <article class="almanac panel">
+          <div class="section-head"><div><p class="overline">ALMANAC</p><h2>&#x4ECA;&#x65E5;&#x9EC4;&#x5386;</h2></div><span class="seal">&#x5409;</span></div>
+          <p id="lunarDate" class="lunar"></p>
+          <div class="auspicious"><div class="good"><span>&#x5B9C;</span><p>&#x9605;&#x8BFB; &#x00B7; &#x4F1A;&#x53CB; &#x00B7; &#x6574;&#x7406;</p></div><div class="avoid"><span>&#x5FCC;</span><p>&#x8FC7;&#x5EA6;&#x7126;&#x8651; &#x00B7; &#x51B2;&#x52A8;&#x51B3;&#x5B9A;</p></div></div>
+          <p class="fortune">&#x65E5;&#x5B50;&#x4E0D;&#x4F1A;&#x8FA9;&#x522B;&#x597D;&#x574F;&#xFF0C;&#x4F60;&#x7684;&#x5FC3;&#x4E2D;&#x81EA;&#x6709;&#x7B54;&#x6848;&#x3002;</p>
+        </article>
+
+        <article class="history panel">
+          <div class="section-head"><div><p class="overline">ON THIS DAY</p><h2>&#x5386;&#x53F2;&#x4E0A;&#x7684;&#x4ECA;&#x5929;</h2></div><span id="dayBadge" class="day-badge"></span></div>
+          <div id="historyList" class="history-list"></div>
+        </article>
+      </section>
+      <footer>&#x6BCF;&#x4E00;&#x5929;&#x90FD;&#x503C;&#x5F97;&#x88AB;&#x8BA4;&#x771F;&#x611F;&#x53D7; <span>&#x2726;</span></footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
